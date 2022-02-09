@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
- resources :cats
+ resources :cats # -> cats_controller.rb
+ resources :dogs 
 end

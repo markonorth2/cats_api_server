@@ -13,6 +13,9 @@
 
 class CatsController < ApplicationController
   def index
-
+    #95% of the time you WILL NOT need to add a render method
+    #We do not res.render instead we name the view same name as the method/action in our controller, and it will be auto rendered.
+    @greetings = "hello"
+    @cats =Cat.all # SELECT * FROM cats
   end
 end
